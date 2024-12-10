@@ -38,4 +38,24 @@ Por que usar Mocks ?
 - Controle: Facilita a simulação de comportamento específicos para testar cenários diversos.
 - Eficiência: Evita a execução de código desnecessário, como chamadas a Apis externas, melhorando a velocidade dos teste.
 
+-------------------------------------
+
+O que é TDD ?
+
+TDD, ou Desenvolvimento Orientado por Testes, é uma abordagem de desenvolvimento de software onde os testes automatizados são escritos antes mesmo da implementação do código de produção.
+
+-------------------------------------
+
+Processo Do TDD:
+1- Escrever um Teste: Começamos escrevendo um teste automatizado que define o comportamento esperado de uma parte do código.
+2- Falhar o Teste: Como ainda não implementamos o código correspondente, o teste inicialmente falhará.
+3- Implementar o código de produção: Em seguida, escrevemos o código mínimo necessário para fazer o teste passar.
+4- Passar o Teste: Executamos o teste novamente e garantimos que ele passe com sucesso.
+5- Refatorar o código: Uma vez que o teste esteja passando, podemos refatorar o código e melhorar sua qualidade, mantendo os teste sempre verdes.
+
+-------------------------------------
+
+
+
+
 
