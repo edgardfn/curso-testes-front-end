@@ -1,7 +1,15 @@
-import { render, screen } from "@testing-library/react";
+import { fireEvent, render, screen } from "@testing-library/react";
 import Login from ".";
 
+const navigateMock = vi.fn();
+
 describe("Testa o component de Login", () => {
+  vi.mock("react-router-dom", () => ({
+    useNavigate() {
+      return navigateMock;
+    },
+  }));
+
   test("Deve haver um título escrito 'Sign In'", async () => {
     render(<Login />);
 
@@ -42,5 +50,14 @@ describe("Testa o component de Login", () => {
     const inputSenha = await screen.findByPlaceholderText("Insira sua senha");
 
     expect(inputSenha).toBeInTheDocument();
+  });
+
+  test("Clicar no botão de login", async () => {
+    render(<Login />);
+
+    const button = await screen.findByRole("button");
+    fireEvent.click(button);
+
+    expect(navigateMock).toHaveBeenCalledTimes(1);
   });
 });

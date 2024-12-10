@@ -26,3 +26,16 @@ npm i @testing-library/jest-dom @testing-library/react @testing-library/user-eve
 npm run tests
 
 npm run tests:coverage
+
+-------------------------------------
+
+Mocks:
+O que é um mock ?
+Uma simulação de um objeto, função ou módulo usado para substituir o comportamento real durante os testes.
+
+Por que usar Mocks ?
+- Isolação: permite isolar o código sendo testado, eliminando dependências externas.
+- Controle: Facilita a simulação de comportamento específicos para testar cenários diversos.
+- Eficiência: Evita a execução de código desnecessário, como chamadas a Apis externas, melhorando a velocidade dos teste.
+
+
