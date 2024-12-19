@@ -12,7 +12,7 @@ export default defineConfig({
         setupFiles: [
             "./src/setupTests.ts"
         ],
-        include: ["src/**/*.test.tsx"],
+        include: ["src/**/*.test.tsx", "src/**/*.test.ts"],
         coverage: {
             exclude: [
                 ...configDefaults.coverage.exclude,
