@@ -23,9 +23,9 @@ npm i @testing-library/jest-dom @testing-library/react @testing-library/user-eve
 
 --------------------------------------------
 
-npm run tests
+npm run test
 
-npm run tests:coverage
+npm run test:coverage
 
 -------------------------------------
 
@@ -54,6 +54,26 @@ Processo Do TDD:
 5- Refatorar o código: Uma vez que o teste esteja passando, podemos refatorar o código e melhorar sua qualidade, mantendo os teste sempre verdes.
 
 -------------------------------------
+Mock Implementation:
+De forma muito resumida o mock implementation, serve para que nós mudemos como uma função / método é implementado internamente, ou seja, mudamos o seu comportamento para que nossos testes funcionem.
+
+-------------------------------------
+
+Injeção de dependencias:
+A injeção de dependencias é um design pattern no qual uma classe recebe as dependÊncias de que precisa de fora de si mesma, em vez de criá-las internamente.
+Por que usar?
+- desacoplamento;
+- testabilidade;
+
+-------------------------------------
+Faker JS:
+https://fakerjs.dev/guide/
+npm install @faker-js/faker --save-dev
+
+-------------------------------------
+
+
+
 
 
 
