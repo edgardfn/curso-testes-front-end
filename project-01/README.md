@@ -72,6 +72,30 @@ npm install @faker-js/faker --save-dev
 
 -------------------------------------
 
+Cypress é uma ferramenta usada para testar aplicações Web, com ele você pode testar componentes e também realizada os famosos testes end-to-end;
+
+Vantagens:
+- Confiabilidade;
+- Simplicidade de uso;
+- Execução rápida e eficiente;
+- Visualização interativa dos teste;
+
+https://www.cypress.io/
+
+erro ao iniciar: "ReferenceError: exports is not defined in ES module scope"
+-adicionar no arquivo tsconfig.json:
+"compilerOptions": {
+    "module": "esnext",
+    "target": "es2020",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true
+  }
+
+npm run cypress:open
+-------------------------------------
+
 
 
 
